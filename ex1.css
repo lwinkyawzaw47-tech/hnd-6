@@ -1,0 +1,32 @@
+.header{
+    position: relative;
+    width: 80%;
+}
+.header, .footer{
+    background-color: rgb(96, 124, 148);
+    color: rgb(21, 184, 184);
+    padding: 2%;
+    clear: both;
+}
+.menu{
+    width: 25%;
+    float: left;
+    padding: 5%;
+}
+.content{
+    width: 50%;
+    float: left;
+    padding: 5%;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+.menu li{
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: rgb(91, 156, 187);
+    color: aquamarine;
+    margin-bottom: 8px;
+}

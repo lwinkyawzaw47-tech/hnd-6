@@ -1,0 +1,12 @@
+.card{
+    width: 200px;
+    height: 150px;
+    border: 2px solid rgb(22, 158, 158);
+    background-color: rgb(22, 221, 112);
+    padding: 10px;
+    border-radius: 5%;
+    
+}
+h2, p{
+    text-align: center;
+}
