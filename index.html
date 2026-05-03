@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Camping Products Sales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h2>Camping<span>Gear</span></h2>
+        </div>
+        <button class="navbar-toggle" onclick="this.parentElement.classList.toggle('nav-open')" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Cart.html">Cart</a></li>
+            <li><a href="Review.html">Review</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <a href="sign.html" class="btn-signin">Sign In</a>
+        </div>
+    </nav>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/herosection.avif" class="d-block w-100 herosection-1" alt="Carousel Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/herosection2.avif" class="d-block w-100 herosection-1" alt="Carousel Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/herosection3.webp" class="d-block w-100 herosection-1" alt="Carousel Image 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main class="content">
+        
+        <h2>Top Rated Equipment</h2>
+        <p>Gear tested in the wild, loved by adventurers.</p>
+    </main>
+    <section class="featured-products">
+   
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Ultralighttents.webp" alt="CloudWalker">
+                <span class="category-tag">Tents</span>
+            </div>
+            <div class="product-body">
+                <h3>CloudWalker Ultralight</h3>
+                <p class="product-desc">The ultimate 2-person tent for long-distance hikers. Weighs only 2.1 lbs.</p>
+                <div class="product-action-row">
+                    <span class="current-price">$249.00</span>
+                    <button class="cart-icon-btn" onclick="addToCart('CloudWalker', '249.00', 'images/Ultralighttents.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/backpack3.avif" alt="Vanguard 65">
+                <span class="category-tag">Packs</span>
+            </div>
+            <div class="product-body">
+                <h3>Vanguard 65 Expedition</h3>
+                <p class="product-desc">Heavy-duty suspension for multi-day backcountry trekking.</p>
+                <div class="product-action-row">
+                    <span class="current-price">$199.00</span>
+                    <button class="cart-icon-btn" onclick="addToCart('Vanguard 65', '199.00', 'images/backpack3.avif')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Hikerboot.png" alt="Summit Hiker">
+                <span class="category-tag">Footwear</span>
+            </div>
+            <div class="product-body">
+                <h3>Summit GORE-TEX Hiker</h3>
+                <p class="product-desc">Waterproof leather boots for the toughest rocky trails.</p>
+                <div class="product-action-row">
+                    <span class="current-price">$185.00</span>
+                    <button class="cart-icon-btn" onclick="addToCart('Summit Hiker', '185.00', 'images/Hikerboot.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/JetBoilFlash.webp" alt="Jet-Stream">
+                <span class="category-tag">Stoves</span>
+            </div>
+            <div class="product-body">
+                <h3>Jet-Stream Flash System</h3>
+                <p class="product-desc">Boil water in 100 seconds. All-in-one integrated cooking.</p>
+                <div class="product-action-row">
+                    <span class="current-price">$115.00</span>
+                    <button class="cart-icon-btn" onclick="addToCart('Jet-Stream Flash', '115.00', 'images/JetBoilFlash.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Headlamp.jpg" alt="HeadLamp Pro">
+                <span class="category-tag">Lighting</span>
+            </div>
+            <div class="product-body">
+                <h3>HeadLamp Pro</h3>
+                <p class="product-desc">1200 lumen headlamp with gesture-sensing and red light.</p>
+                <div class="product-action-row">
+                    <span class="current-price">$55.00</span>
+                    <button class="cart-icon-btn" onclick="addToCart('HeadLamp Pro', '55.00', 'images/Headlamp.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Titantool.jpg" alt="Titan Tool">
+                <span class="category-tag">Gear</span>
+            </div>
+            <div class="product-body">
+                <h3>Titan 18-in-1 Tool</h3>
+                <p class="product-desc">Heavy-duty stainless steel survival tool for any emergency.</p>
+                <div class="product-action-row">
+                    <span class="current-price">$45.00</span>
+                    <button class="cart-icon-btn" onclick="addToCart('Titan Tool', '45.00', 'images/Titantool.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/bed2.webp" alt="Arctic Down">
+                <span class="category-tag">Sleeping</span>
+            </div>
+            <div class="product-body">
+                <h3>Arctic Down 0°F Bag</h3>
+                <p class="product-desc">Premium 800-fill down for sub-zero alpine adventures.</p>
+                <div class="product-action-row">
+                    <span class="current-price">$320.00</span>
+                    <button class="cart-icon-btn" onclick="addToCart('Arctic Down', '320.00', 'images/bed2.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Trek1.webp" alt="Insulated Flask">
+                <span class="category-tag">Hydration</span>
+            </div>
+            <div class="product-body">
+                <h3>Thermo-Trek 32oz</h3>
+                <p class="product-desc">Double-wall vacuum insulation keeps ice cold for 48 hours.</p>
+                <div class="product-action-row">
+                    <span class="current-price">$34.00</span>
+                    <button class="cart-icon-btn" onclick="addToCart('Thermo-Trek', '34.00', 'images/Trek 1.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Compass.jpeg" alt="Pathfinder">
+                <span class="category-tag">Nav</span>
+            </div>
+            <div class="product-body">
+                <h3>Pathfinder Pro Compass</h3>
+                <p class="product-desc">Liquid-filled sighting compass for expert navigation.</p>
+                <div class="product-action-row">
+                    <span class="current-price">$28.00</span>
+                    <button class="cart-icon-btn" onclick="addToCart('Pathfinder Pro', '28.00', 'images/Compass.jpeg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+<div class="product-card">
+            <div class="image-container">
+                <img src="images/pillow.jpg" alt="Neck pillow">
+                <span class="category-tag">Sleep</span>
+            </div>
+            <div class="product-body">
+                <h3>Neck pillow</h3>
+                <p class="product-desc">Comfortable neck pillow for a good night's sleep.</p>
+                <div class="product-action-row">
+                    <span class="current-price">$28.00</span>
+                    <button class="cart-icon-btn" onclick="addToCart('Neck pillow', '28.00', 'images/pillow.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/solarlamps.png" alt="Volt-Max 300">
+                <span class="category-tag">Electronics</span>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <!-- <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(12)</span> -->
+                </div>
+                <h3>Volt-Max 300W Power Station</h3>
+                <p class="product-desc">Silent, portable power for your phones, laptops, and drones. Fast solar recharging.</p>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="old-price">$350</span>
+                        <span class="current-price">$299.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Volt-Max 300', '299.00', 'images/power-station.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/aidkit.webp" alt="Wild-Rescue Kit">
+                <span class="category-tag">Safety</span>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <!-- <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(88)</span> -->
+                </div>
+                <h3>Wild-Rescue Medical Kit</h3>
+                <p class="product-desc">Comprehensive 150-piece medical set in a waterproof, ripstop nylon bag.</p>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="current-price">$45.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Wild-Rescue Kit', '45.00', 'images/first-aid.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    
+    <!-- VIP Explorer Program -->
+    <section class="vip-program">
+        <div class="vip-container">
+            <div class="vip-header">
+                <span class="vip-badge"><i class="fas fa-crown"></i> Exclusive</span>
+                <h2>VIP Explorer Program</h2>
+                <p>Unlock rewards, discounts & early access as you adventure with us</p>
+            </div>
+
+            <div class="vip-cards">
+                <div class="vip-card vip-bronze">
+                    <div class="vip-card-glow"></div>
+                    <div class="vip-tier-icon"><i class="fas fa-campground"></i></div>
+                    <span class="vip-tier-label">Bronze</span>
+                    <h3>Trailblazer</h3>
+                    <div class="vip-price">
+                        <span class="vip-amount">Free</span>
+                        <span class="vip-period">to join</span>
+                    </div>
+                    <ul class="vip-perks">
+                        <li><i class="fas fa-check"></i> 5% off all purchases</li>
+                        <li><i class="fas fa-check"></i> Birthday bonus coupon</li>
+                        <li><i class="fas fa-check"></i> Early sale alerts</li>
+                        <li><i class="fas fa-check"></i> Free gear checklist PDF</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Priority shipping</li>
+                    </ul>
+                    <a href="#" class="vip-btn vip-btn-bronze">Get Started</a>
+                </div>
+
+                <div class="vip-card vip-silver">
+                    <div class="vip-card-glow"></div>
+                    <div class="vip-popular">Most Popular</div>
+                    <div class="vip-tier-icon"><i class="fas fa-mountain"></i></div>
+                    <span class="vip-tier-label">Silver</span>
+                    <h3>Adventurer</h3>
+                    <div class="vip-price">
+                        <span class="vip-amount">$49</span>
+                        <span class="vip-period">/year</span>
+                    </div>
+                    <ul class="vip-perks">
+                        <li><i class="fas fa-check"></i> 15% off all purchases</li>
+                        <li><i class="fas fa-check"></i> Free priority shipping</li>
+                        <li><i class="fas fa-check"></i> Exclusive member deals</li>
+                        <li><i class="fas fa-check"></i> Annual $20 store credit</li>
+                        <li><i class="fas fa-check"></i> Early product access</li>
+                    </ul>
+                    <a href="#" class="vip-btn vip-btn-silver">Join Silver</a>
+                </div>
+
+                <div class="vip-card vip-gold">
+                    <div class="vip-card-glow"></div>
+                    <div class="vip-tier-icon"><i class="fas fa-fire"></i></div>
+                    <span class="vip-tier-label">Gold</span>
+                    <h3>Summit Elite</h3>
+                    <div class="vip-price">
+                        <span class="vip-amount">$99</span>
+                        <span class="vip-period">/year</span>
+                    </div>
+                    <ul class="vip-perks">
+                        <li><i class="fas fa-check"></i> 25% off all purchases</li>
+                        <li><i class="fas fa-check"></i> Free express shipping</li>
+                        <li><i class="fas fa-check"></i> Personal gear advisor</li>
+                        <li><i class="fas fa-check"></i> Annual $50 store credit</li>
+                        <li><i class="fas fa-check"></i> VIP launch event invites</li>
+                    </ul>
+                    <a href="#" class="vip-btn vip-btn-gold">Go Gold</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-logo">Camping<span>Gear</span></h3>
+                <p>Providing the best outdoor equipment for your next adventure since 2026.</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Categories.html">Shop All</a></li>
+                    <li><a href="About.html">Our Story</a></li>
+                    <li><a href="Review.html">Customer Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Camping Street, Outdoor City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> hello@campinggear.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Camping Gear. All rights reserved. Built for explorers.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Camping Products Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h2>Camping<span>Gear</span></h2>
+        </div>
+        <button class="navbar-toggle" onclick="this.parentElement.classList.toggle('nav-open')" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Cart.html">Cart</a></li>
+            <li><a href="Review.html">Review</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <a href="sign.html" class="btn-signin">Sign In</a>
+        </div>
+    </nav>
+    
+    <main class="product-page">
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Daybackpack.webp" alt="Trail Scout 20">
+                <div class="category-tag">Daypack</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(42)</span>
+                </div>
+                <h3>Trail Scout 20L</h3>
+                <p class="product-desc">Compact and water-resistant. Perfect for summit pushes and quick day hikes.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-box"></i> 20 Liters</div>
+                    <div class="spec-item"><i class="fas fa-feather"></i> 1.2 lbs</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="old-price">$85</span>
+                        <span class="current-price">$65.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Trail Scout 20L', '65.00', 'images/Daybackpack.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Vanguard backpack.webp" alt="Vanguard 65">
+                <span class="category-tag" style="background:#2ecc71; color:white;">Best Seller</span>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(128)</span>
+                </div>
+                <h3>Vanguard 65 Expedition</h3>
+                <p class="product-desc">Anti-gravity suspension system for heavy loads on multi-day backcountry trips.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-box"></i> 65 Liters</div>
+                    <div class="spec-item"><i class="fas fa-shield-alt"></i> Internal Frame</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="old-price">$240</span>
+                        <span class="current-price">$199.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Vanguard 65', '199.00', 'images/Vanguard backpack.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Ghost Backpack.webp" alt="Ghost UL 45">
+                <div class="category-tag">Ultralight</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★☆</div>
+                    <span class="reviews-count">(15)</span>
+                </div>
+                <h3>Ghost UL 45</h3>
+                <p class="product-desc">Made from Dyneema composite fabric. Designed for the thru-hiker ounce-counter.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-box"></i> 45 Liters</div>
+                    <div class="spec-item"><i class="fas fa-feather"></i> 0.9 lbs</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="current-price">$310.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Ghost UL 45', '310.00', 'images/Ghost Backpack.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Ranger backpack.jpg" alt="Ranger Tactical">
+                <div class="category-tag">Tactical</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(56)</span>
+                </div>
+                <h3>Ranger Ops Tactical</h3>
+                <p class="product-desc">MOLLE webbing and hydration bladder compatible. Extremely rugged 1000D Nylon.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-box"></i> 35 Liters</div>
+                    <div class="spec-item"><i class="fas fa-tint"></i> Hydro Ready</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="current-price">$125.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Ranger Ops', '125.00', 'images/Ranger backpack.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Hydro Backpack.webp" alt="Hydro-Rush 10">
+                <div class="category-tag">Hydration</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★☆</div>
+                    <span class="reviews-count">(89)</span>
+                </div>
+                <h3>Hydro-Rush 10L</h3>
+                <p class="product-desc">Includes 2.5L premium reservoir. Perfect for mountain biking and trail running.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-tint"></i> 2.5L Reservoir</div>
+                    <div class="spec-item"><i class="fas fa-running"></i> Aerodynamic</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="old-price">$90</span>
+                        <span class="current-price">$72.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Hydro-Rush 10L', '72.00', 'images/Hydro Backpack.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Summit backpack.jpg" alt="Summit Hauler 85">
+                <div class="category-tag">Expedition</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(31)</span>
+                </div>
+                <h3>Summit Hauler 85</h3>
+                <p class="product-desc">For the serious mountaineer. Reinforced bottom and ice-axe loops included.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-box"></i> 85 Liters</div>
+                    <div class="spec-item"><i class="fas fa-mountain"></i> Alpine Ready</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="current-price">$285.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Summit Hauler 85', '285.00', 'images/Summit backpack.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Dry backpack.webp" alt="Dry-Trek 30">
+                <div class="category-tag">Waterproof</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(19)</span>
+                </div>
+                <h3>Dry-Trek 30L</h3>
+                <p class="product-desc">Fully submersible roll-top design. Keep your gear bone-dry during river crossings.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-water"></i> IPX7 Rated</div>
+                    <div class="spec-item"><i class="fas fa-lock"></i> Roll-Top</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="current-price">$145.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Dry-Trek 30L', '145.00', 'images/Dry backpack.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Kid Carry backpack.webp" alt="Kid-Carry Pro">
+                <div class="category-tag">Family</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(64)</span>
+                </div>
+                <h3>Kid-Carry Pro</h3>
+                <p class="product-desc">Safe and comfortable child carrier with integrated sunshade and storage bag.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-child"></i> Max 40 lbs</div>
+                    <div class="spec-item"><i class="fas fa-sun"></i> UV Shade</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="old-price">$320</span>
+                        <span class="current-price">$275.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Kid-Carry Pro', '275.00', 'images/pack-8.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-logo">Camping<span>Gear</span></h3>
+                <p>Providing the best outdoor equipment for your next adventure since 2026.</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Categories.html">Shop All</a></li>
+                    <li><a href="About.html">Our Story</a></li>
+                    <li><a href="Review.html">Customer Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Camping Street, Outdoor City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> hello@campinggear.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Camping Gear. All rights reserved. Built for explorers.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Camping Products Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h2>Camping<span>Gear</span></h2>
+        </div>
+        <button class="navbar-toggle" onclick="this.parentElement.classList.toggle('nav-open')" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Cart.html">Cart</a></li>
+            <li><a href="Review.html">Review</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <a href="sign.html" class="btn-signin">Sign In</a>
+        </div>
+    </nav>
+    <section class="review-page">
+        <div class="review-layout">
+            <!-- Left: User Reviews -->
+            <div class="review-users">
+                <div class="review-users-header">
+                    <i class="fas fa-users"></i>
+                    <h2>Customer Reviews</h2>
+                    <p>See what fellow adventurers are saying</p>
+                </div>
+
+                <div class="user-review-card">
+                    <div class="user-review-top">
+                        <div class="user-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div class="user-info">
+                            <h4>Sarah Mitchell</h4>
+                            <span class="review-date">Apr 12, 2026</span>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="user-review-text">"The camping tent was incredibly easy to set up and held up perfectly against strong winds. Best purchase I've made this year!"</p>
+                </div>
+
+                <div class="user-review-card">
+                    <div class="user-review-top">
+                        <div class="user-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div class="user-info">
+                            <h4>James Carter</h4>
+                            <span class="review-date">Mar 28, 2026</span>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="user-review-text">"Great quality sleeping bag — kept me warm at 20°F. Only wish it packed down a bit smaller. Still, highly recommend!"</p>
+                </div>
+
+                <div class="user-review-card">
+                    <div class="user-review-top">
+                        <div class="user-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div class="user-info">
+                            <h4>Emily Nguyen</h4>
+                            <span class="review-date">Mar 15, 2026</span>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="user-review-text">"The portable stove is a game changer! Boiled water in under 3 minutes. Lightweight and compact — perfect for backpacking trips."</p>
+                </div>
+
+                <div class="user-review-card">
+                    <div class="user-review-top">
+                        <div class="user-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div class="user-info">
+                            <h4>David Brooks</h4>
+                            <span class="review-date">Feb 22, 2026</span>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="user-review-text">"Decent headlamp for the price. Battery life is solid but the beam could be brighter. Good for casual camping though."</p>
+                </div>
+
+                <div class="user-review-card">
+                    <div class="user-review-top">
+                        <div class="user-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div class="user-info">
+                            <h4>Rachel Torres</h4>
+                            <span class="review-date">Jan 30, 2026</span>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="user-review-text">"Love the hiking backpack! So many compartments and super comfortable on long treks. The waterproof cover saved me during a downpour."</p>
+                </div>
+            </div>
+
+            <!-- Right: Review Form -->
+            <div class="review-form-side">
+                <div class="review-container">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <i class="fas fa-pen-nib"></i>
+                            <h2>Share Your Adventure</h2>
+                            <p>How was your gear on the trail?</p>
+                        </div>
+
+                        <form action="/submit-review" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="rating">Service Rating</label>
+                                <div class="select-wrapper">
+                                    <select id="rating" name="rating">
+                                        <option value="5">5 - Excellent (Top Tier)</option>
+                                        <option value="4">4 - Very Good</option>
+                                        <option value="3">3 - Average</option>
+                                        <option value="2">2 - Poor</option>
+                                        <option value="1">1 - Terrible</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="review">Your Review</label>
+                                <textarea id="review" name="review"
+                                    placeholder="Describe your experience with our products..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit">Post Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-logo">Camping<span>Gear</span></h3>
+                <p>Providing the best outdoor equipment for your next adventure since 2026.</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Categories.html">Shop All</a></li>
+                    <li><a href="About.html">Our Story</a></li>
+                    <li><a href="Review.html">Customer Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Camping Street, Outdoor City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> hello@campinggear.com</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Camping Gear. All rights reserved. Built for explorers.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

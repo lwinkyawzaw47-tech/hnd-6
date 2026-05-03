@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Camping Products Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h2>Camping<span>Gear</span></h2>
+        </div>
+        <button class="navbar-toggle" onclick="this.parentElement.classList.toggle('nav-open')" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Cart.html">Cart</a></li>
+            <li><a href="Review.html">Review</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <a href="sign.html" class="btn-signin">Sign In</a>
+        </div>
+    </nav>
+   <main class="product-page">
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Hikerboot.png" alt="Summit Hiker GORE-TEX">
+                <span class="category-tag">Waterproof</span>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(142)</span>
+                </div>
+                <h3>Summit GORE-TEX Hiker</h3>
+                <p class="product-desc">Full-grain leather with a waterproof membrane. Built for rocky terrain and heavy packs.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-tint-slash"></i> 100% Dry</div>
+                    <div class="spec-item"><i class="fas fa-mountain"></i> Vibram Sole</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="old-price">$210</span>
+                        <span class="current-price">$185.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Summit Hiker', '185.00', 'images/Hikerboot.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Swift-path boot.jpg" alt="Swift-Path Runner">
+                <span class="category-tag" style="background:#2ecc71; color:white;">Ultralight</span>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(89)</span>
+                </div>
+                <h3>Swift-Path Trail Runner</h3>
+                <p class="product-desc">Breathable mesh with aggressive lugs. Perfect for fast-packing and dry summer trails.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-feather"></i> 11 oz</div>
+                    <div class="spec-item"><i class="fas fa-wind"></i> Air-Mesh</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="current-price">$120.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Swift-Path Runner', '120.00', 'images/Swift-path boot.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Alphine Boot.avif" alt="Alpine Scrambler">
+                <div class="category-tag">All-Terrain</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★☆</div>
+                    <span class="reviews-count">(56)</span>
+                </div>
+                <h3>Alpine Mid Scrambler</h3>
+                <p class="product-desc">The perfect balance of ankle support and flexibility. Ideal for weekend explorers.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-shoe-prints"></i> High Grip</div>
+                    <div class="spec-item"><i class="fas fa-shield-alt"></i> Toe Guard</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="old-price">$155</span>
+                        <span class="current-price">$130.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Alpine Scrambler', '130.00', 'images/Alphine Boot.avif')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Artic boot.webp" alt="Arctic Grip Boot">
+                <span class="category-tag" style="background:#3498db; color:white;">Insulated</span>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(31)</span>
+                </div>
+                <h3>Arctic Grip Expedition</h3>
+                <p class="product-desc">400g Thinsulate insulation. Rated for -20°C. Perfect for snowshoeing and winter camps.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-thermometer-three-quarters"></i> -20°C Rated</div>
+                    <div class="spec-item"><i class="fas fa-snowflake"></i> Snow-Lock</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="current-price">$245.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Arctic Grip', '245.00', 'images/Artic boot.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Rivers cross boot.jpg" alt="River Cross Sandal">
+                <div class="category-tag">Water</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(112)</span>
+                </div>
+                <h3>River Cross Sandal</h3>
+                <p class="product-desc">Closed-toe protection for river crossings and canoe trips. Quick-dry webbing straps.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-water"></i> Quick-Dry</div>
+                    <div class="spec-item"><i class="fas fa-recycle"></i> Vegan</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="old-price">$95</span>
+                        <span class="current-price">$75.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('River Sandal', '75.00', 'images/Rivers cross boot.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Campfire Mocs boot.webp" alt="Campfire Mocs">
+                <div class="category-tag">Comfort</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(47)</span>
+                </div>
+                <h3>Quilted Campfire Mocs</h3>
+                <p class="product-desc">Insulated slip-ons with a rubber sole. Like a sleeping bag for your feet.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-couch"></i> Soft Fleece</div>
+                    <div class="spec-item"><i class="fas fa-check"></i> Packable</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="current-price">$55.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Campfire Mocs', '55.00', 'images/shoes-camp.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-logo">Camping<span>Gear</span></h3>
+                <p>Providing the best outdoor equipment for your next adventure since 2026.</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Categories.html">Shop All</a></li>
+                    <li><a href="About.html">Our Story</a></li>
+                    <li><a href="Review.html">Customer Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Camping Street, Outdoor City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> hello@campinggear.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Camping Gear. All rights reserved. Built for explorers.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

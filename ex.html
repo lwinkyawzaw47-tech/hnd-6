@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping Sale Homepage</title>
+    <style>
+        /* --- 1. Reset Basic CSS Rules --- 
+           This removes default browser margins so our design fits perfectly.
+        */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* A clean, modern font */
+            background-color: #F5F5F5; /* A light grey page background, like the image */
+        }
+
+        /* --- 2. Create the Layout Container --- 
+           This centers all content and gives it a nice width on desktop.
+        */
+        .site-container {
+            max-width: 1200px; /* The "breakpoint" in your image */
+            margin: 0 auto; /* Centers the whole container */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* --- 3. The Top Header/Navigation Area (THE FLEXBOX PART) --- */
+        .header {
+            display: flex; /* <-- THIS is the magic property for layout */
+            justify-content: space-between; /* Pushes content groups to the far left and right */
+            align-items: center; /* Vertically aligns the links with the logo */
+            background-color: white;
+            padding: 15px 30px;
+            border-radius: 8px; /* Slightly rounded corners for the header bar */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Optional: slight shadow for depth */
+            margin-bottom: 20px; /* Space between header and sale section */
+        }
+
+        /* A styling helper for both left and right link groups */
+        .nav-group {
+            display: flex; /* Links within groups will stack horizontally */
+            gap: 20px; /* Adds space between the individual links */
+        }
+
+        .header a {
+            text-decoration: none; /* Removes the underline from links */
+            color: #555; /* The darker grey text color */
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Styling for the central logo placeholders */
+        .header-logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        /* --- 4. The "Big Camping Sale" Section --- */
+        .sale-hero {
+            background-color: white;
+            padding: 60px 20px; /* Lots of space around the text */
+            text-align: center; /* Centers the headline and paragraph */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        .sale-hero h1 {
+            font-size: 36px;
+            color: black;
+            font-weight: 900; /* Extra bold */
+            margin-bottom: 10px;
+        }
+
+        .sale-hero p {
+            font-size: 18px;
+            color: #888; /* The lighter grey color for the subheading */
+        }
+
+        /* --- 5. The Large Image Placeholder --- */
+        .main-image-placeholder {
+            background-color: white;
+            height: 400px; /* A fixed height for now */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #CCC;
+            font-size: 100px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="site-container">
+
+        <header class="header">
+            <div class="nav-group left-nav">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+            </div>
+
+            <div class="header-logo">
+                NOA
+            </div>
+
+            <div class="nav-group right-nav">
+                <a href="#">Categories</a>
+                <a href="#">Contact</a>
+            </div>
+        </header>
+
+        <section class="sale-hero">
+            <h1>Big Camping Sale.</h1>
+            <p>Save on top gear.</p>
+        </section>
+
+        <div class="main-image-placeholder">
+            NOA
+        </div>
+
+    </div>
+
+</body>
+</html>

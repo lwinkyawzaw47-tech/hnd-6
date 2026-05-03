@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Camping Products Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h2>Camping<span>Gear</span></h2>
+        </div>
+        <button class="navbar-toggle" onclick="this.parentElement.classList.toggle('nav-open')" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Cart.html">Cart</a></li>
+            <li><a href="Review.html">Review</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <a href="sign.html" class="btn-signin">Sign In</a>
+        </div>
+    </nav>
+   
+    <main class="product-page">
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Pocket Rocket Pro.webp" alt="Pocket Rocket Pro">
+                <div class="category-tag">Backpacking</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(54)</span>
+                </div>
+                <h3>Pocket Rocket Pro</h3>
+                <p class="product-desc">Palm-sized powerful burner that fits in your mug. Precision flame control for simmering.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-fire"></i> 3.5 min Boil</div>
+                    <div class="spec-item"><i class="fas fa-weight-hanging"></i> 2.6 oz</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="old-price">$50</span>
+                        <span class="current-price">$42.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Pocket Rocket Pro', '42.00', 'images/Pocket Rocket Pro.webp')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/JetboilFlash.webp" alt="JetboilFlash">
+                <span class="category-tag" style="background:#2ecc71; color:white;">Fastest</span>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="reviews-count">(112)</span>
+                </div>
+                <h3>Jet-Stream Flash System</h3>
+                <p class="product-desc">The ultimate all-in-one cooking system. Includes insulated cozy and color-change heat indicator.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-bolt"></i> 100 sec Boil</div>
+                    <div class="spec-item"><i class="fas fa-box"></i> 1.0L Cup</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="current-price">$115.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('JetboilFlash', '115.00', 'images/stove-system.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="image-container">
+                <img src="images/Everest Burner.jpg" alt="Everest 2-Burner">
+                <div class="category-tag">Family</div>
+            </div>
+            <div class="product-body">
+                <div class="rating-row">
+                    <div class="stars">★★★★☆</div>
+                    <span class="reviews-count">(38)</span>
+                </div>
+                <h3>Everest Dual-Burner</h3>
+                <p class="product-desc">High-pressure burners for cooking full meals. Wind blocks and easy-clean stainless steel.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-fire"></i> 20k BTU</div>
+                    <div class="spec-item"><i class="fas fa-users"></i> Propane</div>
+                </div>
+                <div class="product-action-row">
+                    <div class="price-stack">
+                        <span class="old-price">$160</span>
+                        <span class="current-price">$135.00</span>
+                    </div>
+                    <button class="cart-icon-btn" onclick="addToCart('Everest Dual-Burner', '135.00', 'images/stove-basecamp.jpg')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-logo">Camping<span>Gear</span></h3>
+                <p>Providing the best outdoor equipment for your next adventure since 2026.</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Categories.html">Shop All</a></li>
+                    <li><a href="About.html">Our Story</a></li>
+                    <li><a href="Review.html">Customer Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Camping Street, Outdoor City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> hello@campinggear.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Camping Gear. All rights reserved. Built for explorers.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
